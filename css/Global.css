@@ -1,0 +1,56 @@
+:root {
+  --primary: #3b82f6;
+  --secondary: #f97316;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.brand-bar {
+  width: 100%;
+  height: 5px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+
+  background: linear-gradient(
+    90deg,
+    #ef4444,
+    #f97316,
+    #facc15,
+    #22c55e,
+    #3b82f6,
+    #7c3aed
+  );
+
+  background-size: 200% 200%;
+  animation: animarBarra 6s ease infinite;
+}
+
+@keyframes animarBarra {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.destaque {
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #22c55e,
+    #f97316,
+    #7c3aed
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - AJ01</title>
+  <link rel="stylesheet" href="css/Login.css">
+  <link rel="stylesheet" href="css/Components.css">
+  <link rel="stylesheet" href="css/Global.css">
+</head>
+<body>
+      <!--Bolinhas-->
+  <div class="background-bubbles"></div>
+      <!--Bolinhas-->
+  <div class="container">
+    <!-- LADO ESQUERDO -->
+    <div class="left-panel">
+        <img src="assets/imagens/imagem1.png" class="logo">
+
+    </div>
+    <!--LADO DIREITO-->
+    <div class="right-panel">
+        <div cçass="card">
+            <h2 class="titulo"
+            >Bem-vindo ao <span class="destaque">Filadélfia Kids</span>
+            </h2>
+
+            <div class="brand-bar"></div>
+            
+            <p class="subtitulo">Acesse sua conta para continuar.</p>
+
+      <form id="formlogin">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Digite sua Senha" required>
+        </div>
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <div class="link-area">
+        Não possui conta? <a href="Cadastros.html">Cadastrar</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/Bubbles.js"></script>
+</body>
+</html>
