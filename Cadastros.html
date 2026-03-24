@@ -23,31 +23,44 @@
       <!--Diferença entre ID e class:
           ID é único e não pode ser reutilizado
           Class pode ser reutilizado em vários elementos-->
-      <div id="mensagem" class="mensagem-feedback"></div>
+      <div id="mensagem" class="mensagem-feedback">
+        <div class="mensagem-conteudo">
+        <span id="mensagemIcone" class="mensagem-icone"></span>
+        <span id="mensagemTexto" class="mensagem-texto"></span>
+      </div>
+
+        <button type="button" id="fecharMensagem" class="mensagem-fechar">
+          ×
+        </button>
+      </div>
 
       <form id="formCadastro">
-        <div class="input-group">
-          <label for="nome">Nome completo</label>
-          <input type="text" id="nome" placeholder="Digite seu nome completo" required>
-        </div>
+  <div class="input-group">
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+    <small class="campo-erro" id="erroNome"></small>
+  </div>
 
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Digite seu melhor email" required>
-        </div>
+  <div class="input-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Digite seu melhor email" required>
+    <small class="campo-erro" id="erroEmail"></small>
+  </div>
 
-        <div class="input-group">
-          <label for="senha">Senha</label>
-          <input type="password" id="senha" placeholder="Crie uma senha" required>
-        </div>
+  <div class="input-group">
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" placeholder="Crie uma senha" required>
+    <small class="campo-erro" id="erroSenha"></small>
+  </div>
 
-        <div class="input-group">
-          <label for="telefone">Telefone</label>
-          <input type="text" id="telefone" placeholder="(00) 00000-0000">
-        </div>
+  <div class="input-group">
+    <label for="telefone">Telefone</label>
+    <input type="text" id="telefone" placeholder="(00) 00000-0000">
+    <small class="campo-erro" id="erroTelefone"></small>
+  </div>
 
-        <button type="submit">Cadastrar</button>
-      </form>
+  <button type="submit">Cadastrar</button>
+</form>
 
       <div class="link-area">
         Já tem conta? <a href="Login.html">Entrar</a>
