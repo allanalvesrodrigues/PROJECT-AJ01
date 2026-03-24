@@ -67,13 +67,13 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 label {
@@ -219,90 +219,9 @@ button:active {
 
 /*Início da mensagem personalizada*/
 
-.mensagem-feedback {
-  display: none;
-  position: relative;
-  width: 100%;
-  padding: 10px 42px 10px 12px;
-  margin-bottom: 13px;
-  border-radius: 12px;
-  animation: aparecerMensagem 0.3s ease;
-}
-
-.mensagem-conteudo {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.mensagem-icone {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: bold;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.mensagem-texto {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.35;
-  padding-right: 6px;
-}
-
-.mensagem-fechar {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  border: none;
-  background: transparent;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-  color: inherit;
-  opacity: 0.7;
-  padding: 0;
-  margin: 0;
-}
-
-.mensagem-fechar:hover {
-  opacity: 1;
-}
-
-.mensagem-sucesso {
-  display: flex;
-  background: rgba(34, 197, 94, 0.10);
-  border: 1px solid rgba(34, 197, 94, 0.28);
-  border-left: 5px solid #22c55e;
-  color: #166534;
-}
-
-.mensagem-sucesso .mensagem-icone {
-  background: #22c55e;
-  color: white;
-}
-
-.mensagem-erro {
-  display: flex;
-  background: rgba(239, 68, 68, 0.10);
-  border: 1px solid rgba(239, 68, 68, 0.28);
-  border-left: 5px solid #ef4444;
-  color: #991b1b;
-}
-
-.mensagem-erro .mensagem-icone {
-  background: #ef4444;
-  color: white;
-}
-
 .campo-erro {
   display: block;
-  min-height: 16px;
+  min-height: 10px;
   margin-top: 6px;
   font-size: 12px;
   color: #dc2626;
